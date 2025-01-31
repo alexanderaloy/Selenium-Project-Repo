@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class Base {
 	
-	public WebDriver driver;  // created interface object reference variable to access in all methods 
+	public WebDriver driver;  // created interface object reference variable as a global variable to access in all methods 
 	
 	public void initializeBrowser() {
 	//WebDriver driver = new ChromeDriver();	//driver loading in chrome browser	
@@ -21,6 +21,8 @@ public class Base {
 	driver.quit();	// all window close
 	//driver.close(); //current first window(parent) close
 	}
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

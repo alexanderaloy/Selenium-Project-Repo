@@ -22,8 +22,38 @@ public class Locators extends Base{
 		id5.click();
 		
 	}
+	
+	public void classname() {
+	WebElement c1 = driver.findElement(By.className("header-top"));	//practicing with unique class attribute
+	WebElement c2 = driver.findElement(By.className("clearfix"));   
+	WebElement c3 = driver.findElement(By.className("container page"));  
+	WebElement c4 = driver.findElement(By.className("col-lg-3 col-md-3 col-sm-12 col-xs-12")); 
+	}
+	
+	public void name() {
+	WebElement n1 = driver.findElement(By.name("viewport")); //practicing with name attribute
+	WebElement n2 = driver.findElement(By.name("description"));
+	WebElement n3 = driver.findElement(By.name("keywords"));
+	WebElement n4 = driver.findElement(By.name("author"));
+	}
 
-	public static void main(String[] args) {
+	public void linktext() {
+	WebElement l1 = driver.findElement(By.linkText("Simple Form Demo"));  //practicing with linktext attribute.
+	WebElement l3 = driver.findElement(By.linkText("Radio Buttons Demo")); //Linktext attribute used to identify webelement in code
+	WebElement l2 = driver.findElement(By.linkText("Checkbox Demo")); //Eg '<a href="jquery-select.php">Jquery Select2</a>' starts with <a href
+	WebElement l4 = driver.findElement(By.linkText("Select Input"));
+	WebElement l5 = driver.findElement(By.linkText("Jquery Select2"));
+	
+	
+	}
+	
+    public void partialLinkText() {
+		
+	}
+		
+    
+    public static void main(String[] args) {
+	
 		// TODO Auto-generated method stub
 
 	}
