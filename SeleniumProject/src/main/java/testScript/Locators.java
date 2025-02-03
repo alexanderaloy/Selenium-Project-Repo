@@ -5,7 +5,11 @@ import org.openqa.selenium.WebElement;
 
 public class Locators extends Base{
 	
-	//WebElement elementname=driver.findElement(By.Locator("locator value"));
+	//Syntax : WebElement elementname=driver.findElement(By.Locator("locator value")); 
+	
+	//WebElement is an interface that extends the SearchContext and TakesScreenshot interfaces. 
+	//RemoteWebElement class is the fully implemented class of the WebElement interface
+	//WebElement is used to interact with specific elements on a web page, whereas WebDriver handles browser management and navigation
 	
 	public void id() {   //locator id 
 		//Enter and show Message code
@@ -19,8 +23,7 @@ public class Locators extends Base{
 		WebElement id4 = driver.findElement(By.id("value-b"));
 		id4.sendKeys("2");
 		WebElement id5 = driver.findElement(By.id("button-two"));
-		id5.click();
-		
+		id5.click();	
 	}
 	
 	public void classname() {
@@ -43,12 +46,11 @@ public class Locators extends Base{
 	WebElement l2 = driver.findElement(By.linkText("Checkbox Demo")); //Eg '<a href="jquery-select.php">Jquery Select2</a>' starts with <a href
 	WebElement l4 = driver.findElement(By.linkText("Select Input"));
 	WebElement l5 = driver.findElement(By.linkText("Jquery Select2"));
-	
-	
 	}
 	
-    public void partialLinkText() {
-		
+    public void partialLinkText() {	
+    WebElement pl1 = driver.findElement(By.partialLinkText("Bootstrap Date"));
+    WebElement pl2 = driver.findElement(By.partialLinkText("Radio Butt"));
 	}
 		
     
